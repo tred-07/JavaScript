@@ -1,6 +1,4 @@
-function sum(){
-    let sum=0;
-    for(let i=0;i<10;i++)sum+=i;
-    return sum;
-}
-console.log(sum())
+const max=Math.max(1,2,3,4,101)
+const min=Math.min(1,2,3,4,5,101)
+console.log(max)
+console.log(min)

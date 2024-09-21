@@ -1,13 +1,39 @@
-console.log("Hello");
-console.log("index js detected");
-const texts= document.getElementsByTagName('h1');
-for(let text of texts)console.log(text.innerText);
-console.log("QuerySelectorAll Start");
-const rhq=document.querySelectorAll('#rhq');
-for(let text of rhq)console.log(text.innerText);
-// style in js
-document.getElementById('arizona').style.textAlign='center'
-document.getElementById('arizona').style.fontSize='45px';
-document.getElementById('arizona').style.fontWeight='bold';
-document.getElementById('arizona').style.color='brown';
-
+console.log("index.js embeded");
+const main_container=document.getElementById('main-container');
+const ul1=document.createElement('ul');
+const ul2=document.createElement('ul');
+const li1=document.createElement('li');
+const li2=document.createElement('li');
+const li3=document.createElement('li');
+const li4=document.createElement('li');
+const li5=document.createElement('li');
+const li6=document.createElement('li');
+const li7=document.createElement('li');
+const li8=document.createElement('li');
+const li9=document.createElement('li');
+const li10=document.createElement('li');
+const h1_1=document.createElement('h1');
+const h1_2=document.createElement('h1');
+h1_1.innerText="Location Of Servers: ";
+h1_2.innerText="AI's on these server:";
+li1.innerText="Phoenix, Arizona";
+li2.innerText="Maryland, Annapolis";
+li3.innerText="Melbourne, Australia";
+li4.innerText="Jakarta, Indonesia";
+li5.innerText="Waarsaw, Poland";
+li6.innerText="Seoul, South Korea";
+li7.innerText="Armsterdam, Netherland";
+li8.innerText="Rome, Italy";
+li9.innerText="Toronto, Canada"
+ul1.appendChild(h1_1);
+ul1.appendChild(li1);
+ul1.appendChild(li2);
+ul1.appendChild(li3);
+ul1.appendChild(li4);
+ul1.appendChild(li5);
+ul1.appendChild(li6);
+ul1.appendChild(li7);
+ul1.appendChild(li8);
+ul1.appendChild(li9);
+main_container.appendChild(ul1);
+console.log(main_container);
